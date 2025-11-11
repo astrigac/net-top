@@ -1,0 +1,46 @@
+.TH ISA-TOP 1
+.SH NAME
+isa-top \- Application for obtaining network traffic statistics
+
+.SH SYNOPSIS
+.B isa-top
+[\fB\-i\fR \fIinterface-id\fR]
+[\fB\-s\fR \fBb\fR|\fBp\fR]
+[\fB\-t\fR \fIseconds\fR]
+[\fB\-h\fR|\fB\-\-help\fR]
+
+.SH DESCRIPTION
+.B isa-top
+is a network traffic analytics tool. It captures packets from a user-specified network interface and displays statistics about the top 10 network flows. It shows source and destination IP addresses together with their ports, transport protocol used, and the rates of bytes and packets transmitted and received. The output is refreshed at a user-defined interval and ordered by specified order.
+
+.SH OPTIONS
+.TP
+.B \-i \fIinterface-id\fR
+Specify the network interface to capture packets from. This option is required.
+
+.TP
+.B \-s \fBb\fR|\fBp\fR
+Sort the output by bytes (\fBb\fR) or packets (\fBp\fR). The default is to sort by bytes.
+
+.TP
+.B \-t \fIseconds\fR
+Set the refresh interval for statistics in seconds. Must be greater than 0. The default is 1 second.
+
+.TP
+.B \-h, \-\-help
+Display a help message and exit.
+
+.SH EXAMPLES
+.TP
+Monitor network traffic on interface \fBeth0\fR, sorted by bytes (default):
+.B
+isa-top \-i eth0
+
+.TP
+Monitor network traffic on interface \fEnp0s3\fR with a refresh interval of 2 seconds, sorted by packets:
+.B
+isa-top \-i enp0s3 \-s p \-t 2
+
+.SH AUTHOR
+Written by Aurel Strigac <xstrig00@vutbr.cz>.
+
