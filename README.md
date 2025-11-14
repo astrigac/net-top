@@ -1,9 +1,7 @@
 # net-top: Network Traffic Monitor
 
 `net-top` is a command-line utility designed to capture and analyze network traffic on a specified interface. It provides real-time statistics about network flows, similar to the functionality of the well-known tool `iftop`. The application identifies IP addresses, port numbers, and transport protocols to monitor data flow and displays dynamically updated statistics in the terminal.
-
-![showcase](https://github.com/user-attachments/assets/e7a5c72c-aa0f-4007-8408-e1d2512e6507)
-
+![showcase](https://github.com/user-attachments/assets/5224db8a-3add-4536-9862-e76f44e3d2f7)
 This project was developed as part of the Network Applications and Network Administration (ISA) course at the Faculty of Information Technology, Brno University of Technology.
 
 ## Language and Libraries
