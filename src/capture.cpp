@@ -10,7 +10,7 @@
 
 #include "capture.h"
 #include "flow.h"
-#include "isa-top.h"
+#include "net-top.h"
 
 /**
  * @brief Function for handling separate packets.

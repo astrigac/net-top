@@ -1,7 +1,7 @@
 // Aurel Strigáč <xstrig00>
 
-#ifndef ISA_TOP_H
-#define ISA_TOP_H
+#ifndef NET_TOP_H
+#define NET_TOP_H
 
 #include <string>
 #include <pcap.h>
@@ -21,4 +21,4 @@ extern char errbuf[];            // Buffer for pcap error messages
  */
 void signal_handler(int sig);
 
-#endif // ISA_TOP_H
+#endif // NET_TOP_H

@@ -1,7 +1,7 @@
 // Aurel Strigáč <xstrig00>
 
 #include "flow.h"
-#include "isa-top.h"
+#include "net-top.h"
 
 std::map<FlowID, FlowStats> flows;
 

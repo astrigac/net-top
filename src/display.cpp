@@ -7,7 +7,7 @@
 #include "display.h"
 #include "flow.h"
 #include "utils.h"
-#include "isa-top.h"
+#include "net-top.h"
 
 /**
  * @brief Function for displaying the collected statistics using ncurses.

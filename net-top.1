@@ -1,16 +1,16 @@
-.TH ISA-TOP 1
+.TH NET-TOP 1
 .SH NAME
-isa-top \- Application for obtaining network traffic statistics
+net-top \- Application for obtaining network traffic statistics
 
 .SH SYNOPSIS
-.B isa-top
+.B net-top
 [\fB\-i\fR \fIinterface-id\fR]
 [\fB\-s\fR \fBb\fR|\fBp\fR]
 [\fB\-t\fR \fIseconds\fR]
 [\fB\-h\fR|\fB\-\-help\fR]
 
 .SH DESCRIPTION
-.B isa-top
+.B net-top
 is a network traffic analytics tool. It captures packets from a user-specified network interface and displays statistics about the top 10 network flows. It shows source and destination IP addresses together with their ports, transport protocol used, and the rates of bytes and packets transmitted and received. The output is refreshed at a user-defined interval and ordered by specified order.
 
 .SH OPTIONS
@@ -34,12 +34,12 @@ Display a help message and exit.
 .TP
 Monitor network traffic on interface \fBeth0\fR, sorted by bytes (default):
 .B
-isa-top \-i eth0
+net-top \-i eth0
 
 .TP
 Monitor network traffic on interface \fEnp0s3\fR with a refresh interval of 2 seconds, sorted by packets:
 .B
-isa-top \-i enp0s3 \-s p \-t 2
+net-top \-i enp0s3 \-s p \-t 2
 
 .SH AUTHOR
 Written by Aurel Strigac <xstrig00@vutbr.cz>.

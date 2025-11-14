@@ -8,7 +8,7 @@
 #include <cstring>
 
 #include "utils.h"
-#include "isa-top.h"
+#include "net-top.h"
 
 /**
  * @brief Function for formatting bit rates.
@@ -72,7 +72,7 @@ std::string format_ip(const std::string &ip) {
  */
 void print_help() {
     std::cout << "\nUSAGE:\n"
-              << "./isa-top -i interface-id [-s b|p] [-t seconds]\n\n"
+              << "./net-top -i interface-id [-s b|p] [-t seconds]\n\n"
               << "Options:\n"
               << "  -i         :  Interface on which the application listens defined by its identifier.\n"
               << "  -s         :  Sort output by:\n"

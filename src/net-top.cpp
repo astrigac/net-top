@@ -15,7 +15,7 @@
 #include "display.h"
 #include "flow.h"
 #include "capture.h"
-#include "isa-top.h"
+#include "net-top.h"
 
 std::string interface;                              // Network interface to capture packets from
 char sort_order = 'b';                              // Sorting order: 'b' for bytes, 'p' for packets
